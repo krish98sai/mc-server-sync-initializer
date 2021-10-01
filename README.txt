@@ -23,3 +23,19 @@ Initial pseudocode
 7. Play...
 8. Stop the server
 9. Sync using remote as destination
+
+remove_lock_file.bat
+remove_lock_file.txt
+
+get lock file from remote
+if lock file is not empty:
+  error, someone else owns this server
+else:
+  write lock file with name
+  put lock file on remote
+  sync to local
+  start server
+  stop server
+  sync to remote
+  delete lock file
+  sync to remote

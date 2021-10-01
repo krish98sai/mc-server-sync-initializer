@@ -2,5 +2,5 @@ option batch abort
 option confirm off
 open %ftp_address% -certificate="%ftp_certificate%" -username="%ftp_user%" -password="%ftp_password%" -explicit
 synchronize local server/world %remote_server_directory%/world -transfer=binary -criteria=time
-get %remote_server_directory%/sync_version.txt server/sync_version.txt -transfer=binary
+get %remote_server_directory%/sync_version.txt server\sync_version.txt -transfer=binary
 exit
