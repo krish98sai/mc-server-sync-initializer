@@ -1,0 +1,5 @@
+option batch abort
+option confirm off
+open %ftp_address% -certificate="%ftp_certificate%" -username="%ftp_user%" -password="%ftp_password%" -explicit
+get %remote_server_directory%/sync_version.txt remote_sync_version.txt -transfer=binary
+exit
